@@ -1,0 +1,3 @@
+# Asynchronous State Updates in React 19
+
+This example demonstrates a common misconception in React: state updates are asynchronous.  The code in `bug.js` shows a click handler that increments a counter and then immediately logs the counter's value.  Because the state update is asynchronous, the log will show the *old* value, not the updated one. The solution in `bugSolution.js` demonstrates how to use functional updates to correctly update state and access the updated value through the useEffect hook.
